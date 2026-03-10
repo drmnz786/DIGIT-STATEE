@@ -1,0 +1,23 @@
+# Jekyll configuration for Digital State
+title: Digital State
+baseurl: ""
+url: "https://mnzholdings.com"
+
+defaults:
+  - scope:
+      path: "sites/iiac"
+    values:
+      permalink: /iiac/
+  - scope:
+      path: "sites/quantum"
+    values:
+      permalink: /quantum/
+  - scope:
+      path: "sites/juronal"
+    values:
+      permalink: /juronal/
+
+include:
+  - sites
+
+markdown: kramdown
