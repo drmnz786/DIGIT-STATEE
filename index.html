@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital State - Sovereign Digital Infrastructure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #1e3c72;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2d3748;
+            margin: 30px 0 15px 0;
+        }
+        
+        .status {
+            background: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .folder-structure {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            margin: 20px 0;
+        }
+        
+        .folder-structure pre {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .command {
+            background: #1a202c;
+            color: #68d391;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .file-list {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .file-item:last-child {
+            border-bottom: none;
+        }
+        
+        .file-icon {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            border-radius: 5px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .domain-badge {
+            background: #edf2f7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #4a5568;
+            margin-left: 15px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e2e8f0;
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+            width: 75%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏛️ DIGITAL STATE</h1>
+        <h2>Sovereign Digital Infrastructure</h2>
+        
+        <div class="status">
+            <strong>✅ SYSTEM STATUS:</strong> OPERATIONAL<br>
+            <strong>📍 LOCATION:</strong> D:\WEBHOST\<br>
+            <strong>🔧 CONTROLLER:</strong> COMMANDER MODE ACTIVE
+        </div>
+        
+        <div class="folder-structure">
+            <pre>
+D:\WEBHOST\
+├── index.html          (MAIN SITE - YOU ARE HERE)
+├── css/                (styles)
+├── js/                 (scripts)
+├── sites/              (subdomains)
+│   ├── app/           (app.mnzholding.com)
+│   ├── iiac/          (iiac.mnzholding.com)
+│   └── publish/       (publish.mnzholding.com)
+├── scripts/            (automation)
+└── evidence/           (proofs & timestamps)
+            </pre>
+        </div>
+        
+        <div class="file-list">
+            <h3>📁 YOUR FILES (READY TO DEPLOY)</h3>
+            
+            <div class="file-item">
+                <div class="file-icon">📄</div>
+                <div><strong>index.html</strong> - Main website</div>
+                <span class="domain-badge">mnzholding.com</span>
+            </div>
+            
+            <div class="file-item">
+                <div class="file-icon">📁</div>
+                <div><strong>sites/app/</strong> - Application portal</div>
+                <span class="domain-badge">app.mnzholding.com</span>
+            </div>
+            
+            <div class="file-item">
+                <div class="file-icon">📁</div>
+                <div><strong>sites/iiac/</strong> - Institute of AI</div>
+                <span class="domain-badge">iiac.mnzholding.com</span>
+            </div>
+            
+            <div class="file-item">
+                <div class="file-icon">📁</div>
+                <div><strong>sites/publish/</strong> - Publication portal</div>
+                <span class="domain-badge">publish.mnzholding.com</span>
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+        </div>
+        
+        <div style="text-align: center;">
+            <button onclick="window.location='https://github.com'">🚀 DEPLOY TO GITHUB</button>
+            <button onclick="window.location='https://cloudflare.com'">☁️ DEPLOY TO CLOUDFLARE</button>
+            <button onclick="window.location='https://netlify.com'">⚡ DEPLOY TO NETLIFY</button>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #ebf4ff; border-radius: 10px;">
+            <h3 style="color: #1e3c72; margin-bottom: 15px;">📋 NEXT COMMANDS (COPY/PASTE)</h3>
+            <div class="command">
+                cd D:\WEBHOST<br>
+                mkdir sites css js scripts evidence<br>
+                echo "# Digital State" > README.md<br>
+                echo "Sovereign Infrastructure" >> README.md<br>
+                git init<br>
+                git add .<br>
+                git commit -m "Digital State - Complete"
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center; color: #718096; font-size: 0.9em;">
+            <p>🔐 NO PLATFORMS · NO MIDDLEMEN · SOVEREIGN DIGITAL STATE</p>
+            <p>⚡ COMMANDER MODE · COMPLETE CONTROL · INFINITE SCALABILITY</p>
+        </div>
+    </div>
+</body>
+</html>
